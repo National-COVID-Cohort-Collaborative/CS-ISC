@@ -59,7 +59,7 @@ left join us_adm2_sci_county_benchmark sci on (sci.fips_code=a.fips_code)
 left join food_access_transform fat on (sci.fips_code=fat.fips_code)
 
 @transform_pandas(
-    Output(rid="ri.vector.main.execute.d9cf09dd-1a80-4bdb-8f50-49acc8edbd04"),
+    Output(rid="ri.foundry.main.dataset.24a11245-c93b-43fb-b572-57f2aa55f5e7"),
     ZIP_COUNTY_HUD_file=Input(rid="ri.foundry.main.dataset.9ac4d85e-8d54-45b0-ab0c-da4180067c3e"),
     final_sdohstatic=Input(rid="ri.vector.main.execute.8f30348d-42c5-4cfb-a365-99af84dbaa3a")
 )
